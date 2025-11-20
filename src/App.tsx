@@ -14,7 +14,7 @@ function App() {
         fetch('http://localhost:5001/api/v1/auth/connect/token',
             {method:'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body:JSON.stringify({username:"Humberto.Hickle77",password:"P@ssword1"})})
+                body:JSON.stringify({username:"Camden22",password:"P@ssword1"})})
             .then(response => response.json()).then(data => {
             console.log('Token ', data);
             setToken(data.access_token);
